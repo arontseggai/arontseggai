@@ -1,15 +1,23 @@
 
 
 body {
-  background-color: green;
+  background-color: #C7F0BD;
 }
 
-/*   HEADER   */
+.overflow-not {
+  overflow: hidden;
+}
+
+.padded-column {
+  padding: 150px 50px !important;
+}
+/*//////////////////////////   HEADER   //////////////////////*/
 
 header {
   position: fixed;
   width: 100%;
   padding: 0 30px;
+  z-index: 100;
 }
 
 header .header-container {
@@ -18,8 +26,12 @@ header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: transparent;
   padding: 0 30px;
+  transition: 90ms ease-in-out;
+}
+header .scrolled {
+  background-color: #fff;
 }
 
 header ul {
@@ -30,11 +42,14 @@ header ul {
 
 header ul li {
   padding: 0 20px;
-  border-right: 2px solid black;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   margin: 5% 0;
   justify-content: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 13px;
 }
 
 header ul li:last-child {
@@ -46,22 +61,58 @@ header .logo-imagery {
   width: 80px;
 }
 
-
-
-/*   FEEDWRAPPER   */
-
-.feed-wrapper {
-  padding-top: 130px;
-}
+/*//////////////////////////   FEEDWRAPPER   //////////////////////*/
 
 
 .feed-card {
   width: 100%;
-  height: 900px;
+  background-color: black;
+  position: relative;
+  color: black;
+  letter-spacing: 1px;
+}
+.feed-card img {
+    transition: 120ms ease-in-out;
 }
 
+.feed-card h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
 
-/*   FOOTER   */
+.feed-card h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ddd;
+}
+
+.feed-card span {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  background-color: #fff;
+  left: -120%;
+  padding: 0 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 150ms ease-in-out;
+}
+
+.feed-card:hover img {
+  -webkit-transform: translateY(-140px) translateX(0px);
+  -moz-transform: translateY(-140px) translateX(0px);
+  -ms-transform: translateY(-140px) translateX(0px);
+  transform: translateY(-140px) translateX(0px);
+}
+
+.feed-card:hover span {
+  -webkit-transform: translateX(130%);
+  -moz-transform: translateX(130%);
+  -ms-transform: translateX(130%);
+  transform: translateX(130%);
+}
+
+/*//////////////////////////   FOOTER   //////////////////////*/
 
 footer {
   text-align: center;
@@ -71,6 +122,9 @@ footer {
 
 footer span {
   margin: 0 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 13px;
 }
 
 
