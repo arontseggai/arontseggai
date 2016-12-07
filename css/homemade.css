@@ -225,7 +225,10 @@ footer span {
   overflow: hidden;
 }
 
+/*//////////////////////////   PROJECT INFO   //////////////////////*/
+
 .wrapper {
+  display: none;
   background: white;
   padding: 150px;
   width: 94%;
@@ -259,8 +262,17 @@ footer span {
 
 .wrapper p {
   margin-top: 60px;
- font-size: 20px;
- font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrapper img {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  right: 30px;
+  top: 30px;
+}
 }
 
 
