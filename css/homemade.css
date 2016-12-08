@@ -18,6 +18,14 @@ body {
 .open {
   background-color: #fff !important;
 }
+
+.hidden {
+  display: none;
+}
+
+.light {
+  opacity: 0.02;
+}
 /*//////////////////////////   HEADER   //////////////////////*/
 
 header {
@@ -227,8 +235,12 @@ footer span {
 
 /*//////////////////////////   PROJECT INFO   //////////////////////*/
 
+#project-show img {
+  display: table-cell;
+}
+
+
 .wrapper {
-  display: none;
   background: white;
   padding: 150px;
   width: 94%;
@@ -273,6 +285,11 @@ footer span {
   right: 30px;
   top: 30px;
 }
+
+.outer-layer {
+  display: table;
 }
+
+
 
 
