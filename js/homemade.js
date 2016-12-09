@@ -1,8 +1,10 @@
 
+//////////////////////////// NAVBAR COLOR ON SCROLL FUNCTION
+
 $(window).on('scroll', function(){
-  var scrollPosition = window.pageYOffset;
-  var scrollBreakPoint = 90;
-  var nav = $('#nav');
+  var scrollPosition = window.pageYOffset,
+      scrollBreakPoint = 90,
+      nav = $('#nav');
 
   if (scrollPosition > scrollBreakPoint) {
     nav.addClass('scrolled');
@@ -11,14 +13,14 @@ $(window).on('scroll', function(){
   }
 });
 
+//////////////////////////// CONTACT SECTION OPENING FUNCTION
 
 $('#contact').on('click',function(){
   var innerHeight           = $('.inner').outerHeight(),
       outerContainer        = $('.outer'),
       outerContainerHeight  = $('.outer').height(),
-      header                = $('#nav');
-
-  var removeOpenClass =function(){
+      header                = $('#nav'),
+      removeOpenClass =function(){
     header.removeClass('open');
   }
 
@@ -34,4 +36,43 @@ $('#contact').on('click',function(){
     setTimeout(function(){removeOpenClass();}, 200)
   }
 });
+
+//////////////////////////// PROJECT SHOW INFO OPENING FUNCTION
+
+$(document).ready(function(){
+  var hideInfoOnLoad = function(){
+    $('#project-info').addClass('hidden');
+  }
+  var removeOverlayOnLoad = function(){
+    $('#cover').removeClass('overlay');
+  }
+
+  $('#project-info .wrapper').addClass('shorten');
+
+  setTimeout(function(){hideInfoOnLoad(), removeOverlayOnLoad()}, 1000)
+});
+
+$('#project-close').on('click', function(){
+  $('#project-info').addClass('hidden');
+  $('#cover').removeClass('overlay');
+});
+
+$('#project-show img').on('click', function(){
+$('#project-info .wrapper').removeClass('shorten');
+  $('#project-info').removeClass('hidden');
+  $('#cover').addClass('overlay');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
