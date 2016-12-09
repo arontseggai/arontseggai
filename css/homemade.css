@@ -22,7 +22,7 @@ body {
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 1s linear;
 }
 
 .shorten {
@@ -117,7 +117,7 @@ header .inner p {
   font-size: 2.2rem;
   text-align: center;
   margin: 2rem auto;
-  padding: 0px 50px;
+  padding: 0px 120px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -280,6 +280,7 @@ footer span {
 
 .wrapper h1 {
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .wrapper hr {
@@ -293,16 +294,20 @@ footer span {
 
 .wrapper p {
   margin-top: 60px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.wrapper img {
+.wrapper #project-close {
   position: absolute;
   height: 20px;
   width: auto;
   right: 30px;
   top: 30px;
+}
+
+.wrapper a {
+  color: black;
 }
 
 #project-info {
@@ -331,6 +336,12 @@ footer span {
 
 #project-show img:hover {
   cursor: help;
+}
+
+#project-info .link {
+  margin-top: 60px;
+  height: 50px;
+  width: auto;
 }
 
 
