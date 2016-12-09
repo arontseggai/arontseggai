@@ -3,7 +3,7 @@
 
 $(window).on('scroll', function(){
   var scrollPosition = window.pageYOffset,
-      scrollBreakPoint = 90,
+      scrollBreakPoint = 50,
       nav = $('#nav');
 
   if (scrollPosition > scrollBreakPoint) {

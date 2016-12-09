@@ -42,7 +42,7 @@ body {
   z-index: 800;
   top: 0;
   opacity: 0.95;
-  background-color: beige;
+  background-color: #4A1643;;
   transition: 800ms ease-in-out;
 }
 /*//////////////////////////   HEADER   //////////////////////*/
