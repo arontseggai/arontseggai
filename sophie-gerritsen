@@ -1,6 +1,7 @@
   <!DOCTYPE html>
   <html>
   <head>
+    <title>Sophie Gerritsen |</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import stylesheets-->
@@ -45,15 +46,13 @@
         <div class="banner">
           <div class="outer-layer">
             <img class="responsive-img" src="images/sophie_gerritsen2.png" alt="">
+            <div id="cover" class="overlay"></div>
           </div>
         </div>
       </section>
-
       <section id=project-info>
-        <div class="wrapper hidden">
-          <span id="project-close">
-            <img src="images/delete.png" alt="">
-          </span>
+        <div class="wrapper">
+          <div id="project-close"></div>
           <h1>Sophie Gerritsen</h1>
           <hr>
           <h3>CLIENT: SOPHIE GERRITSEN</h3>
