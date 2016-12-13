@@ -29,7 +29,9 @@
 
 /* CSS FOR MOBILE */
 @media screen and (max-width: 600px){
-
+  header {
+    padding: 0;
+  }
 
   #mobile-nav #mobile-menu {
     display: none;
@@ -58,8 +60,7 @@
   }
 
   footer {
-    display: flex;
-    flex-direction: column;
+    font-size: 8px;
   }
 
   .wrapper h1 {
@@ -68,6 +69,21 @@
 
   .wrapper {
     padding: 80px 10px 40px 10px;
+  }
+  #cover {
+    display: none;
+  }
+  #project-close {
+    display: none;
+  }
+  .wrapper {
+    position: inherit;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #project-show img {
+    width: 98%;
+    margin-left: 1%;
   }
 }
 
