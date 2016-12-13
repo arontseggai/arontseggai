@@ -45,6 +45,10 @@ body {
   background-color: #4A1643;;
   transition: 800ms ease-in-out;
 }
+
+.show {
+  display: block !important;
+}
 /*//////////////////////////   HEADER   //////////////////////*/
 
 header {

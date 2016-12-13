@@ -19,21 +19,30 @@ $('#contact').on('click',function(){
   var innerHeight           = $('.inner').outerHeight(),
       outerContainer        = $('.outer'),
       outerContainerHeight  = $('.outer').height(),
-      header                = $('#nav'),
+      header                = $('.nav'),
       removeOpenClass =function(){
     header.removeClass('open');
   }
 
   if(outerContainerHeight < 1 ){
-    outerContainer.height(innerHeight * 0.5);
-    outerContainer.height(0);
-    outerContainer.height(innerHeight * 0.8);
     outerContainer.height(innerHeight);
 
     header.addClass('open');
   } else {
     outerContainer.height(0);
     setTimeout(function(){removeOpenClass();}, 200)
+  }
+});
+
+
+//////////////////////////// CONTACT SECTION OPENING FUNCTION
+
+$('#mobile-logo').on('click', function(){
+  var menu = $('#mobile-menu');
+  if (menu.hasClass('show')) {
+    menu.removeClass('show');
+  } else {
+    menu.addClass('show');
   }
 });
 
