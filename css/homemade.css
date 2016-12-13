@@ -211,24 +211,6 @@ header .outer {
   z-index: 900;
 }
 
-.feed-card:hover img {
-  -webkit-transform: translate(-8px, -8px);
-  -moz-transform: translate(-8px, -8px);
-  -ms-transform: translate(-8px, -8px);
-  transform: translate(-8px, -8px);
-}
-
-.feed-card:hover {
-  -webkit-transform: translate(2px, 2px);
-  -moz-transform: translate(2px, 2px);
-  -ms-transform: translate(2px, 2px);
-  transform: translate(2px, 2px);
-}
-
-.feed-card:hover span {
-  left: -2px;
-  top: 10px;
-}
 
 
 /*//////////////////////////   FOOTER   //////////////////////*/

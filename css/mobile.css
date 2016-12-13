@@ -1,4 +1,27 @@
 
+@media screen and (min-width: 993px){
+.feed-card:hover img {
+  -webkit-transform: translate(-8px, -8px);
+  -moz-transform: translate(-8px, -8px);
+  -ms-transform: translate(-8px, -8px);
+  transform: translate(-8px, -8px);
+}
+
+.feed-card:hover {
+  -webkit-transform: translate(2px, 2px);
+  -moz-transform: translate(2px, 2px);
+  -ms-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+}
+
+.feed-card:hover span {
+  left: -2px;
+  top: 10px;
+}
+
+
+}
+
 /* CSS FOR TABLET */
 @media screen and (max-width: 992px){
 
@@ -30,11 +53,21 @@
     background-color: #fff;
   }
   #mobile-nav .logo-nav img {
-    width: 25%;
+    height: 120px;
+    width: 120px;
   }
 
-  footer span {
-    font-size: 10px;
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper h1 {
+    font-size: 3.2rem;
+  }
+
+  .wrapper {
+    padding: 80px 10px 40px 10px;
   }
 }
 
