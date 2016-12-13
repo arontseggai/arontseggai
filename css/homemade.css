@@ -2,6 +2,13 @@
 
 body {
   background-color: #C7F0BD;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.grid {
+  flex: 1 0 auto;
 }
 
 .over-flow-not {
@@ -89,6 +96,10 @@ header ul li {
   letter-spacing: 1px;
   font-size: 13px;
   transition: 120ms ease-in-out;
+}
+
+header ul li a {
+  color: black;
 }
 
 header ul li:hover {
@@ -371,4 +382,13 @@ footer span {
   box-shadow: none;
 }
 
+/*//////////////////////////   INSTRUMENTS PAGE   //////////////////////*/
+#instruments-section ul {
+  padding: 150px 0;
+}
+#instruments-section ul li {
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
