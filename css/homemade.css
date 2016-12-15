@@ -116,11 +116,19 @@ header .logo-imagery {
   width: 40px;
   background-color: #4A1643;
 }
+header .mobile-logo {
+  height: 20px;
+  width: 40px;
+  background-color: #4A1643;
+}
 header .logo-imagery:hover {
   cursor: pointer;
 }
 
 header .logo-imagery img {
+ display: none;
+}
+#mobile-nav .logo-nav img {
  display: none;
 }
 
