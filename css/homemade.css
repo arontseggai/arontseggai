@@ -128,9 +128,7 @@ header .logo-imagery:hover {
 header .logo-imagery img {
  display: none;
 }
-#mobile-nav .logo-nav img {
- display: none;
-}
+
 
 header .inner {
   background-color: #fff;
