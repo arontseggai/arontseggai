@@ -53,10 +53,11 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
+    flex-direction: column;
+    text-align: center;
   }
-  #mobile-nav .logo-nav img {
-    height: 60px;
-    width: 60px;
+  #mobile-nav .logo-nav i {
+    font-size: 55px;
   }
 
   footer {
@@ -89,6 +90,11 @@
     width: 98%;
     margin-left: 1%;
   }
+
+  #instruments-section ul {
+    padding: 100px 0 0 0;
+  }
+}
 }
 
 
