@@ -356,6 +356,10 @@ footer span {
   width: auto;
 }
 
+#project-info i {
+  font-size: 60px;
+}
+
 /*//////////////////////////   CONTACT PAGE   //////////////////////*/
 
 #contact-section {
