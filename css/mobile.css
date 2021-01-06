@@ -1,4 +1,27 @@
 
+@media screen and (min-width: 993px){
+.feed-card:hover img {
+  -webkit-transform: translate(-8px, -8px);
+  -moz-transform: translate(-8px, -8px);
+  -ms-transform: translate(-8px, -8px);
+  transform: translate(-8px, -8px);
+}
+
+.feed-card:hover {
+  -webkit-transform: translate(2px, 2px);
+  -moz-transform: translate(2px, 2px);
+  -ms-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+}
+
+.feed-card:hover span {
+  left: -2px;
+  top: 10px;
+}
+
+
+}
+
 /* CSS FOR TABLET */
 @media screen and (max-width: 992px){
 
@@ -6,7 +29,9 @@
 
 /* CSS FOR MOBILE */
 @media screen and (max-width: 600px){
-
+  header {
+    padding: 0;
+  }
 
   #mobile-nav #mobile-menu {
     display: none;
@@ -23,19 +48,53 @@
   }
 
   #mobile-nav .logo-nav {
-    height: 120px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #fff;
+    flex-direction: column;
+    text-align: center;
   }
-  #mobile-nav .logo-nav img {
-    width: 25%;
+  #mobile-nav .logo-nav i {
+    font-size: 55px;
   }
 
-  footer span {
-    font-size: 10px;
+  footer {
+    margin-top: 100px;
+    line-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+
+  .wrapper h1 {
+    font-size: 3.2rem;
+  }
+
+  .wrapper {
+    padding: 80px 10px 40px 10px;
+  }
+  #cover {
+    display: none;
+  }
+  #project-close {
+    display: none;
+  }
+  .wrapper {
+    position: inherit;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #project-show img {
+    width: 98%;
+    margin-left: 1%;
+  }
+
+  #instruments-section ul {
+    padding: 100px 0 0 0;
+  }
+}
 }
 
 

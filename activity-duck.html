@@ -2,6 +2,8 @@
   <html>
   <head>
     <title>Activity Duck |</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import stylesheets-->
@@ -15,15 +17,14 @@
   <body>
     <div class="grid">
       <header>
-        <div id="nav" class="header-container">
+        <div id="nav" class="nav header-container hide-on-small-only">
           <a href="index.html">
             <div class="logo-imagery">
               <img class="responsive-img" src="images/logo.png" alt="Logo Aron Tseggai">
             </div>
           </a>
           <ul>
-            <li>PUNCHES IN BUNCHES</li>
-            <li>INSTRUMENTS</li>
+            <li><a href="instruments.html">INSTRUMENTS</a></li>
             <li id="contact">CONTACT</li>
           </ul>
         </div>
@@ -41,12 +42,25 @@
             </nav>
           </div>
         </div>
+
+        <div id="mobile-nav" class="nav hide-on-med-and-up">
+          <div class="logo-nav valign-wrapper">
+            <i id="mobile-logo" class="valign material-icons">menu</i>
+          </div>
+          <div id="mobile-menu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="instruments.html">INSTRUMENTS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
 
       <section id="project-show">
         <div class="banner">
           <div class="outer-layer">
-            <img class="responsive-img" src="images/activity_duck2.png" alt="">
+            <img class="responsive-img" src="images/activity_duck_3.png" alt="">
             <div id="cover" class="overlay"></div>
           </div>
         </div>
@@ -61,7 +75,7 @@
             Made just in under three weeks, as the final project of <a target="_blank" href="https://www.lewagon.com/">Le Wagon</a>. <br>It was built in Ruby on Rails by Emiel Hagen, Martin Balk and Aron Tseggai.
           </p>
           <a target="_blank" href="http://www.activityduck.com/">
-            <img class="link" src="images/activity_duck_link.svg" alt="">
+            <i class="material-icons">chevron_right</i>
           </a>
         </div>
       </section>
@@ -75,6 +89,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/homemade.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99897866-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>    
   </body>
   </html>
 

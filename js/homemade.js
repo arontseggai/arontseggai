@@ -3,8 +3,8 @@
 
 $(window).on('scroll', function(){
   var scrollPosition = window.pageYOffset,
-      scrollBreakPoint = 50,
-      nav = $('#nav');
+  scrollBreakPoint = 50,
+  nav = $('#nav');
 
   if (scrollPosition > scrollBreakPoint) {
     nav.addClass('scrolled');
@@ -17,10 +17,10 @@ $(window).on('scroll', function(){
 
 $('#contact').on('click',function(){
   var innerHeight           = $('.inner').outerHeight(),
-      outerContainer        = $('.outer'),
-      outerContainerHeight  = $('.outer').height(),
-      header                = $('.nav'),
-      removeOpenClass =function(){
+  outerContainer        = $('.outer'),
+  outerContainerHeight  = $('.outer').height(),
+  header                = $('.nav'),
+  removeOpenClass =function(){
     header.removeClass('open');
   }
 
@@ -48,29 +48,34 @@ $('#mobile-logo').on('click', function(){
 
 //////////////////////////// PROJECT SHOW INFO OPENING FUNCTION
 
-$(document).ready(function(){
-  var hideInfoOnLoad = function(){
+
+if($(window).width() > 600) {
+  $(document).ready(function(){
+    var hideInfoOnLoad = function(){
+      $('#project-info').addClass('hidden');
+    }
+    var removeOverlayOnLoad = function(){
+      $('#cover').removeClass('overlay');
+    }
+
+    $('#project-info .wrapper').addClass('shorten');
+
+    setTimeout(function(){hideInfoOnLoad(), removeOverlayOnLoad()}, 1000)
+  });
+
+  $('#project-close').on('click', function(){
     $('#project-info').addClass('hidden');
-  }
-  var removeOverlayOnLoad = function(){
     $('#cover').removeClass('overlay');
-  }
+  });
 
-  $('#project-info .wrapper').addClass('shorten');
+  $('#project-show img').on('click', function(){
+    $('#project-info .wrapper').removeClass('shorten');
+    $('#project-info').removeClass('hidden');
+    $('#cover').addClass('overlay');
+  });
+}
 
-  setTimeout(function(){hideInfoOnLoad(), removeOverlayOnLoad()}, 1000)
-});
 
-$('#project-close').on('click', function(){
-  $('#project-info').addClass('hidden');
-  $('#cover').removeClass('overlay');
-});
-
-$('#project-show img').on('click', function(){
-$('#project-info .wrapper').removeClass('shorten');
-  $('#project-info').removeClass('hidden');
-  $('#cover').addClass('overlay');
-});
 
 
 

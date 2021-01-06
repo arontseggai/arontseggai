@@ -2,6 +2,13 @@
 
 body {
   background-color: #C7F0BD;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.grid {
+  flex: 1 0 auto;
 }
 
 .over-flow-not {
@@ -59,7 +66,7 @@ header {
 }
 
 header .header-container {
-  height: 90px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -91,6 +98,10 @@ header ul li {
   transition: 120ms ease-in-out;
 }
 
+header ul li a {
+  color: black;
+}
+
 header ul li:hover {
   background-color: #a5cb9c;
   cursor: pointer;
@@ -101,20 +112,35 @@ header ul li:last-child {
 }
 
 header .logo-imagery {
-  height: 100%;
-  width: 80px;
+  height: 20px;
+  width: 40px;
+  background-color: #4A1643;
 }
+header .mobile-logo {
+  height: 20px;
+  width: 40px;
+  background-color: #4A1643;
+}
+header .logo-imagery:hover {
+  cursor: pointer;
+}
+
+header .logo-imagery img {
+ display: none;
+}
+
 
 header .inner {
   background-color: #fff;
   text-align: center;
-  padding: 20px 0 35px;
+  padding: 80px 50px;
 }
 
 header .inner .avatar {
   height: 200px;
   width: 200px;
   margin: auto;
+  display: none;
 }
 
 header .inner p {
@@ -211,24 +237,6 @@ header .outer {
   z-index: 900;
 }
 
-.feed-card:hover img {
-  -webkit-transform: translate(-8px, -8px);
-  -moz-transform: translate(-8px, -8px);
-  -ms-transform: translate(-8px, -8px);
-  transform: translate(-8px, -8px);
-}
-
-.feed-card:hover {
-  -webkit-transform: translate(2px, 2px);
-  -moz-transform: translate(2px, 2px);
-  -ms-transform: translate(2px, 2px);
-  transform: translate(2px, 2px);
-}
-
-.feed-card:hover span {
-  left: -2px;
-  top: 10px;
-}
 
 
 /*//////////////////////////   FOOTER   //////////////////////*/
@@ -348,5 +356,66 @@ footer span {
   width: auto;
 }
 
+#project-info i {
+  font-size: 60px;
+}
 
+/*//////////////////////////   CONTACT PAGE   //////////////////////*/
+
+#contact-section {
+  padding: 100px 20px;
+}
+
+#contact-section .avatar img {
+  width: 200px;
+  height: 200px;
+}
+
+#contact-section .avatar {
+  text-align: center;
+}
+
+#contact-section p {
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#contact-section a {
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: block;
+  float: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  padding: 5px 0;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+#contact-section nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/*//////////////////////////   INSTRUMENTS PAGE   //////////////////////*/
+#instruments-section ul {
+  padding: 150px 0;
+}
+#instruments-section ul li {
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 400ms ease-in-out;
+  border-left: 2px solid transparent;
+}
+
+#instruments-section ul li:hover {
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
+}
 
