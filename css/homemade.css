@@ -9,6 +9,9 @@ body {
 
 .grid {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .over-flow-not {
@@ -40,7 +43,6 @@ body {
 .light {
   opacity: 0.02;
 }
-
 
 .overlay {
   position: absolute;
@@ -129,7 +131,6 @@ header .logo-imagery img {
  display: none;
 }
 
-
 header .inner {
   background-color: #fff;
   text-align: center;
@@ -188,7 +189,6 @@ header .outer {
 }
 /*//////////////////////////   FEED  //////////////////////*/
 
-
 .feed-card {
   width: 100%;
   background-color: black;
@@ -237,14 +237,13 @@ header .outer {
   z-index: 900;
 }
 
-
-
 /*//////////////////////////   FOOTER   //////////////////////*/
 
 footer {
   text-align: center;
   height: 90px;
   line-height: 90px;
+  margin-top: auto;
 }
 
 footer span {
@@ -254,7 +253,6 @@ footer span {
   font-size: 13px;
   opacity: 0.4;
 }
-
 
 /*//////////////////////////   FOOTER   //////////////////////*/
 
@@ -269,7 +267,6 @@ footer span {
 #project-show img {
   display: table-cell;
 }
-
 
 .wrapper {
   background: white;
@@ -417,5 +414,7 @@ footer span {
   border-left: 2px solid black;
   padding-left: 10px;
 }
-}
 
+.icon {
+  font-size: 36px;
+}
